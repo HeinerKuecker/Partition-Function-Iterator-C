@@ -40,6 +40,9 @@ static void compute_right_values(void)
 	set_array[current_idx + 1] = 0; // terminator
 }
 
+/*
+ * API function to set the number to be partitioned
+ */
 void partition_function_iterator__init(
 		const int _entire_size)
 {
@@ -72,11 +75,18 @@ void partition_function_iterator__init(
 	sum_array = malloc(_entire_size * sizeof(int));
 }
 
+/**
+ * API function for checking the existence of the next partitioning.
+ */
 bool partition_function_iterator__has_next()
 {
 	return has_next;
 }
 
+/**
+ * API function to get the next partitioning
+ * as zero terminated array.
+ */
 int * const partition_function_iterator__next()
 {
 	assert(has_next);
