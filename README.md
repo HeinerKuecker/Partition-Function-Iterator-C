@@ -108,17 +108,17 @@ Der Iterator speichert die aktuelle Partitionierung bis zum naechsten Aufruf.
 
 The iterator saves the current partitioning until the next call.
 
-Die Funktion init dient zum Setzen der zu partitionierenden Zahl.
+Die Funktion partition\_function\_iterator\_\_init dient zum Setzen der zu partitionierenden Zahl.
 
-The init function is used to set the number to be partitioned.
+The partition\_function\_iterator\_\_init function is used to set the number to be partitioned.
 
-Die Funktion has_next dient zum Pruefen des Vorhandenseins der nächsten Partitionierung.
+Die Funktion partition\_function\_iterator\_\_has_next dient zum Pruefen des Vorhandenseins der nächsten Partitionierung.
 
-The has_next function is used to check the existence of the next partitioning.
+The partition\_function\_iterator\_\_has_next function is used to check the existence of the next partitioning.
 
-Die Funktion next dient zum Zurueckgeben der nächsten Partitionierung.
+Die Funktion partition\_function\_iterator\_\_next dient zum Zurueckgeben der nächsten Partitionierung.
 
-The next function is used to return the next partitioning.
+The partition\_function\_iterator\_\_next function is used to return the next partitioning.
 
 Die aktuelle Partitionierung wird als 0-terminiertes Array übergeben.
 
